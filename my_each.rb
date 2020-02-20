@@ -3,7 +3,6 @@
 collection = [1, 2, 3, 4]
 
 def my_each(collection)
-  if block_given?
     i = 0
 
     while i < collection.length
@@ -11,10 +10,7 @@ def my_each(collection)
       i = i + 1
     end
     collection
-   else
-
-     puts i
- end
+end
 
 my_each(collection) do |i|
   puts i
